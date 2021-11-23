@@ -8,5 +8,7 @@ public class Main {
         Student student = new Student("Jan", "Molík", 2012, 1514);
 
         SchoolClass schoolClass = new SchoolClass(new Teacher("Petr", "Novotny"), 9, "B");
+        schoolClass.addStudent(student);
+        System.out.println(schoolClass.getLongDescriptionOfClass());
     }
 }
