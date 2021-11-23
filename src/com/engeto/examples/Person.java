@@ -11,4 +11,10 @@ public class Person {
     public String getSurName() {
         return surName;
     }
+
+    public String getFullName() {
+        return this.firstName + " " + this.surName;
+    }
+
+
 }

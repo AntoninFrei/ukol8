@@ -10,4 +10,23 @@ public class Student extends Person{
         this.yearsOfBorn = yearsOfBorn;
         this.id =id;
     }
+
+    public Integer getYearsOfBorn() {
+        return yearsOfBorn;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getFormatedId() {
+        String out;
+        out = this.id.toString();
+        for (int i = out.length(); i < 4; i++) {
+            out = "0" + out;
+        }
+        out = "ID" + out;
+
+        return out;
+    }
 }
